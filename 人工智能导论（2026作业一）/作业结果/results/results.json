@@ -1,0 +1,135 @@
+{
+  "generated_at_utc": "2026-09-08T12:21:56.905261+00:00",
+  "python": "3.14.4 (main, Jun 18 2026, 14:25:02) [GCC 15.2.0]",
+  "platform": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "ortools": "9.15.6755",
+  "distance_rule": "TSPLIB EUC_2D: floor(euclidean_distance + 0.5)",
+  "results": [
+    {
+      "instance": "berlin8",
+      "algorithm": "OR-Tools",
+      "language": "Python",
+      "distance": 2551,
+      "runtime_seconds": 20.00934,
+      "route": "1 -> 2 -> 7 -> 3 -> 8 -> 4 -> 6 -> 5 -> 1",
+      "parameters": {
+        "time_limit_seconds": 20,
+        "strategy": "PATH_CHEAPEST_ARC + GUIDED_LOCAL_SEARCH"
+      }
+    },
+    {
+      "instance": "berlin8",
+      "algorithm": "GA",
+      "language": "C++",
+      "distance": 2551,
+      "runtime_seconds": 0.01245,
+      "route": "1 -> 2 -> 7 -> 3 -> 8 -> 4 -> 6 -> 5 -> 1",
+      "parameters": {
+        "seed": 2026,
+        "population_size": 160,
+        "generations": 500,
+        "mutation_rate": 0.2
+      }
+    },
+    {
+      "instance": "berlin8",
+      "algorithm": "ACO",
+      "language": "C++",
+      "distance": 2551,
+      "runtime_seconds": 0.010483,
+      "route": "1 -> 2 -> 7 -> 3 -> 8 -> 4 -> 6 -> 5 -> 1",
+      "parameters": {
+        "seed": 2026,
+        "ants": 48,
+        "iterations": 220,
+        "alpha": 1,
+        "beta": 4,
+        "evaporation": 0.35
+      }
+    },
+    {
+      "instance": "berlin52",
+      "algorithm": "OR-Tools",
+      "language": "Python",
+      "distance": 7542,
+      "runtime_seconds": 20.002115,
+      "route": "1 -> 22 -> 31 -> 18 -> 3 -> 17 -> 21 -> 42 -> 7 -> 2 -> 30 -> 23 -> 20 -> 50 -> 29 -> 16 -> 46 -> 44 -> 34 -> 35 -> 36 -> 39 -> 40 -> 37 -> 38 -> 48 -> 24 -> 5 -> 15 -> 6 -> 4 -> 25 -> 12 -> 28 -> 27 -> 26 -> 47 -> 13 -> 14 -> 52 -> 11 -> 51 -> 33 -> 43 -> 10 -> 9 -> 8 -> 41 -> 19 -> 45 -> 32 -> 49 -> 1",
+      "parameters": {
+        "time_limit_seconds": 20,
+        "strategy": "PATH_CHEAPEST_ARC + GUIDED_LOCAL_SEARCH"
+      }
+    },
+    {
+      "instance": "berlin52",
+      "algorithm": "GA",
+      "language": "C++",
+      "distance": 7658,
+      "runtime_seconds": 0.043101,
+      "route": "1 -> 22 -> 31 -> 18 -> 3 -> 17 -> 21 -> 42 -> 7 -> 2 -> 30 -> 23 -> 20 -> 50 -> 29 -> 16 -> 44 -> 34 -> 35 -> 36 -> 39 -> 40 -> 37 -> 38 -> 15 -> 4 -> 6 -> 5 -> 24 -> 48 -> 46 -> 25 -> 12 -> 28 -> 27 -> 26 -> 47 -> 13 -> 14 -> 52 -> 11 -> 51 -> 33 -> 43 -> 10 -> 9 -> 8 -> 41 -> 19 -> 45 -> 32 -> 49 -> 1",
+      "parameters": {
+        "seed": 2026,
+        "population_size": 160,
+        "generations": 500,
+        "mutation_rate": 0.2
+      }
+    },
+    {
+      "instance": "berlin52",
+      "algorithm": "ACO",
+      "language": "C++",
+      "distance": 7715,
+      "runtime_seconds": 0.42713,
+      "route": "1 -> 22 -> 18 -> 31 -> 23 -> 20 -> 50 -> 16 -> 29 -> 30 -> 2 -> 7 -> 42 -> 21 -> 17 -> 3 -> 45 -> 19 -> 41 -> 8 -> 9 -> 10 -> 43 -> 33 -> 51 -> 11 -> 52 -> 14 -> 13 -> 47 -> 26 -> 27 -> 28 -> 12 -> 25 -> 4 -> 6 -> 15 -> 5 -> 24 -> 48 -> 38 -> 40 -> 39 -> 37 -> 46 -> 44 -> 34 -> 35 -> 36 -> 49 -> 32 -> 1",
+      "parameters": {
+        "seed": 2026,
+        "ants": 48,
+        "iterations": 220,
+        "alpha": 1,
+        "beta": 4,
+        "evaporation": 0.35
+      }
+    },
+    {
+      "instance": "pr76",
+      "algorithm": "OR-Tools",
+      "language": "Python",
+      "distance": 109043,
+      "runtime_seconds": 20.002054,
+      "route": "1 -> 23 -> 22 -> 21 -> 25 -> 24 -> 46 -> 45 -> 44 -> 48 -> 47 -> 69 -> 68 -> 70 -> 67 -> 50 -> 49 -> 27 -> 26 -> 20 -> 19 -> 31 -> 30 -> 29 -> 32 -> 33 -> 28 -> 43 -> 42 -> 54 -> 53 -> 52 -> 55 -> 56 -> 51 -> 66 -> 65 -> 71 -> 72 -> 73 -> 64 -> 63 -> 57 -> 58 -> 62 -> 61 -> 59 -> 60 -> 41 -> 40 -> 34 -> 35 -> 39 -> 38 -> 36 -> 37 -> 18 -> 17 -> 16 -> 15 -> 74 -> 14 -> 13 -> 12 -> 11 -> 10 -> 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 75 -> 76 -> 1",
+      "parameters": {
+        "time_limit_seconds": 20,
+        "strategy": "PATH_CHEAPEST_ARC + GUIDED_LOCAL_SEARCH"
+      }
+    },
+    {
+      "instance": "pr76",
+      "algorithm": "GA",
+      "language": "C++",
+      "distance": 108832,
+      "runtime_seconds": 0.067773,
+      "route": "1 -> 23 -> 22 -> 21 -> 25 -> 24 -> 46 -> 45 -> 44 -> 48 -> 47 -> 69 -> 68 -> 70 -> 67 -> 50 -> 49 -> 51 -> 66 -> 65 -> 71 -> 72 -> 73 -> 64 -> 63 -> 62 -> 61 -> 41 -> 40 -> 60 -> 59 -> 58 -> 57 -> 56 -> 55 -> 52 -> 53 -> 54 -> 42 -> 43 -> 28 -> 27 -> 26 -> 20 -> 19 -> 31 -> 30 -> 29 -> 32 -> 33 -> 34 -> 39 -> 38 -> 35 -> 36 -> 37 -> 18 -> 17 -> 11 -> 16 -> 15 -> 74 -> 14 -> 13 -> 12 -> 10 -> 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 75 -> 76 -> 1",
+      "parameters": {
+        "seed": 2026,
+        "population_size": 160,
+        "generations": 500,
+        "mutation_rate": 0.2
+      }
+    },
+    {
+      "instance": "pr76",
+      "algorithm": "ACO",
+      "language": "C++",
+      "distance": 110985,
+      "runtime_seconds": 1.174789,
+      "route": "1 -> 23 -> 22 -> 21 -> 25 -> 24 -> 46 -> 45 -> 44 -> 48 -> 47 -> 69 -> 68 -> 70 -> 67 -> 50 -> 49 -> 52 -> 53 -> 54 -> 42 -> 43 -> 28 -> 33 -> 32 -> 35 -> 34 -> 55 -> 56 -> 51 -> 66 -> 65 -> 71 -> 72 -> 73 -> 64 -> 63 -> 57 -> 58 -> 62 -> 61 -> 59 -> 60 -> 41 -> 40 -> 39 -> 38 -> 36 -> 37 -> 18 -> 17 -> 16 -> 15 -> 74 -> 14 -> 13 -> 12 -> 11 -> 9 -> 10 -> 5 -> 20 -> 19 -> 31 -> 30 -> 29 -> 27 -> 26 -> 4 -> 3 -> 6 -> 7 -> 8 -> 2 -> 75 -> 76 -> 1",
+      "parameters": {
+        "seed": 2026,
+        "ants": 48,
+        "iterations": 220,
+        "alpha": 1,
+        "beta": 4,
+        "evaporation": 0.35
+      }
+    }
+  ]
+}

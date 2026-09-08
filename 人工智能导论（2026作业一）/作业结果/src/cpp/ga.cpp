@@ -1,0 +1,13 @@
+#include "solvers.hpp"
+#include <algorithm>
+#include <chrono>
+#include <limits>
+#include <numeric>
+#include <random>
+#include <sstream>
+namespace tsp { namespace { using Clock=std::chrono::steady_clock; double Sec(Clock::time_point s){return std::chrono::duration<double>(Clock::now()-s).count();}
+std::vector<int> Crossover(const std::vector<int>&a,const std::vector<int>&b,std::mt19937_64&rng){int n=a.size();std::uniform_int_distribution<int>pick(0,n-1);int l=pick(rng),r=pick(rng);if(l>r)std::swap(l,r);if(l==r)r=std::min(n,l+1);std::vector<int>c(n,-1);std::vector<bool>used(n);for(int i=l;i<r;++i)used[c[i]=a[i]]=true;int at=r%n;for(int k=0;k<n;++k){int x=b[(r+k)%n];if(!used[x]){c[at]=x;at=(at+1)%n;}}return c;} }
+Result SolveGeneticAlgorithm(const Matrix& d,std::uint64_t seed,int size,int generations,double mutation){auto start=Clock::now();int n=d.size();std::mt19937_64 rng(seed);std::vector<std::vector<int>>pop;for(int i=0;i<std::min(n,size/4);++i)pop.push_back(TwoOpt(NearestNeighbor(i,d),d));std::vector<int>base(n);std::iota(base.begin(),base.end(),0);while((int)pop.size()<size){std::shuffle(base.begin(),base.end(),rng);pop.push_back(base);}std::vector<int>best;std::int64_t best_len=std::numeric_limits<std::int64_t>::max();std::vector<ProgressPoint>progress;std::uniform_real_distribution<double>chance(0,1);std::uniform_int_distribution<int>pos(0,n-1);
+for(int gen=0;gen<generations;++gen){std::vector<std::int64_t>len(size);for(int i=0;i<size;++i)len[i]=TourLength(pop[i],d);std::vector<int>order(size);std::iota(order.begin(),order.end(),0);std::sort(order.begin(),order.end(),[&](int a,int b){return len[a]<len[b];});if(len[order[0]]<best_len){best_len=len[order[0]];best=pop[order[0]];}progress.push_back({gen,best_len,Sec(start)});int elites=std::max(2,size/10);std::vector<std::vector<int>>next;for(int i=0;i<elites;++i)next.push_back(pop[order[i]]);if(gen%25==0)next[0]=TwoOpt(next[0],d,4);auto tournament=[&]()->const std::vector<int>&{std::uniform_int_distribution<int>candidate(0,size-1);int win=candidate(rng);for(int k=1;k<4;++k){int x=candidate(rng);if(len[x]<len[win])win=x;}return pop[win];};while((int)next.size()<size){auto child=Crossover(tournament(),tournament(),rng);if(chance(rng)<mutation){int l=pos(rng),r=pos(rng);if(l>r)std::swap(l,r);std::reverse(child.begin()+l,child.begin()+r+1);}next.push_back(std::move(child));}pop=std::move(next);}
+best=TwoOpt(best,d);best_len=TourLength(best,d);double runtime=Sec(start);progress.push_back({generations,best_len,runtime});std::ostringstream p;p<<"{\"seed\": "<<seed<<", \"population_size\": "<<size<<", \"generations\": "<<generations<<", \"mutation_rate\": "<<mutation<<"}";return{"GA",CanonicalTour(best),best_len,runtime,std::move(progress),p.str()};}
+}
