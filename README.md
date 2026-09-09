@@ -6,7 +6,7 @@ Coursework and the final course project for *Introduction to Artificial Intellig
 
 ## Contents
 
-- `人工智能导论（2026作业一）/`: Assignment 1 — Python OR-Tools plus C++ genetic and ant colony algorithms for TSPLIB instances.
+- `人工智能导论（2026作业一）/`: Assignment 1 — Python OR-Tools, C++ genetic and ant colony algorithms, and a recorded large-language-model solving session for TSPLIB instances.
 
 ## Environment
 
