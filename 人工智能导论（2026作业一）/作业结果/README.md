@@ -8,7 +8,8 @@ C++ 工程只使用 C++20 标准库，不依赖任何第三方 C++ 库。
 
 ```bash
 python3 -m venv ~/.venvs/introduction-to-artificial-intelligence
-~/.venvs/introduction-to-artificial-intelligence/bin/python -m pip install -r requirements.txt
+~/.venvs/introduction-to-artificial-intelligence/bin/python -m pip install -r \
+  "人工智能导论（2026作业一）/作业结果/requirements.txt"
 ```
 
 ## 编译与测试 C++ 算法
@@ -45,6 +46,7 @@ LLM 实验采用“LLM 决策 + 程序评分”协议：模型阅读坐标、构
 ├── src/*.py             # OR-Tools、LLM 协议与绘图代码
 ├── results/             # JSON、CSV、逐次改进日志与 LLM 会话记录
 ├── figures/             # 路线图、收敛图和运行过程截图
+├── requirements.txt     # Python 依赖版本
 ├── 实验报告.md
 └── README.md
 ```
