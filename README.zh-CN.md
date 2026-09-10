@@ -1,17 +1,22 @@
-# 人工智能导论
+<div align="center">
 
-用于保存《人工智能导论》课程作业、可复现实验以及后续课程设计的开源仓库。
+<h1>人工智能导论</h1>
 
-[![许可证：MIT](https://img.shields.io/badge/License-MIT-0f766e.svg)](LICENSE)
-[![Python 3.14](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![C++20](https://img.shields.io/badge/C%2B%2B-20-00599C?logo=cplusplus&logoColor=white)](https://zh.cppreference.com/)
-[![GitHub Stars](https://img.shields.io/github/stars/Wang-Ruibin/introduction-to-artificial-intelligence?style=flat&logo=github)](https://github.com/Wang-Ruibin/introduction-to-artificial-intelligence/stargazers)
+<p><strong>面向人工智能导论课程的可复现作业与实验仓库</strong></p>
 
-[English](README.md) · **简体中文**
+<p>Python OR-Tools · C++20 GA/ACO · 大语言模型实验记录</p>
 
-[查看作业一](./人工智能导论（2026作业一）/) · [阅读实验报告](./人工智能导论（2026作业一）/作业结果/实验报告.md)
+<p>
+  <a href="LICENSE"><img alt="MIT 许可证" src="https://img.shields.io/badge/License-MIT-0f766e.svg"></a>
+  <a href="https://www.python.org/"><img alt="Python 3.14" src="https://img.shields.io/badge/Python-3.14-3776AB?logo=python&amp;logoColor=white"></a>
+  <a href="https://zh.cppreference.com/"><img alt="C++20" src="https://img.shields.io/badge/C%2B%2B-20-00599C?logo=cplusplus&amp;logoColor=white"></a>
+</p>
 
-> 如果这个仓库对你的学习或实验有所帮助，欢迎点一个 ⭐，让更多人看到它。
+<p><a href="README.md">English</a> · <strong>简体中文</strong></p>
+
+<p><a href="./人工智能导论（2026作业一）/">作业一</a> · <a href="./人工智能导论（2026作业一）/作业结果/实验报告.md">实验报告</a> · <a href="./人工智能导论（2026作业一）/作业结果/results/summary.csv">结果汇总</a></p>
+
+</div>
 
 ## 为什么建立这个仓库
 
@@ -104,3 +109,7 @@ C++ 实现不依赖任何第三方 C++ 库。
 ## 许可证
 
 源代码采用 [MIT License](LICENSE)。课程说明、数据集、实验报告和生成结果可能仍受教学要求或上游条款约束。
+
+## 支持这个项目
+
+如果这个仓库对你有帮助，欢迎[点一个 Star](https://github.com/Wang-Ruibin/introduction-to-artificial-intelligence) ⭐，让更多学习者发现它。

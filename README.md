@@ -1,17 +1,22 @@
-# Introduction to Artificial Intelligence
+<div align="center">
 
-Reproducible coursework, experiments, and the future course project for *Introduction to Artificial Intelligence*.
+<h1>Introduction to Artificial Intelligence</h1>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-0f766e.svg)](LICENSE)
-[![Python 3.14](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![C++20](https://img.shields.io/badge/C%2B%2B-20-00599C?logo=cplusplus&logoColor=white)](https://en.cppreference.com/)
-[![GitHub stars](https://img.shields.io/github/stars/Wang-Ruibin/introduction-to-artificial-intelligence?style=flat&logo=github)](https://github.com/Wang-Ruibin/introduction-to-artificial-intelligence/stargazers)
+<p><strong>Reproducible coursework and experiments for an introductory AI course</strong></p>
 
-**English** · [简体中文](README.zh-CN.md)
+<p>Python OR-Tools · C++20 GA/ACO · Recorded LLM experiments</p>
 
-[Explore Assignment 1](./人工智能导论（2026作业一）/) · [Read the experiment report](./人工智能导论（2026作业一）/作业结果/实验报告.md)
+<p>
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/License-MIT-0f766e.svg"></a>
+  <a href="https://www.python.org/"><img alt="Python 3.14" src="https://img.shields.io/badge/Python-3.14-3776AB?logo=python&amp;logoColor=white"></a>
+  <a href="https://en.cppreference.com/"><img alt="C++20" src="https://img.shields.io/badge/C%2B%2B-20-00599C?logo=cplusplus&amp;logoColor=white"></a>
+</p>
 
-> If this repository helps with your study or experiments, consider giving it a ⭐. It helps others discover the project.
+<p><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
+
+<p><a href="./人工智能导论（2026作业一）/">Assignment 1</a> · <a href="./人工智能导论（2026作业一）/作业结果/实验报告.md">Experiment report</a> · <a href="./人工智能导论（2026作业一）/作业结果/results/summary.csv">Results</a></p>
+
+</div>
 
 ## Why this repository
 
@@ -104,3 +109,7 @@ Corrections, reproducibility reports, and focused improvements are welcome throu
 ## License
 
 Source code is available under the [MIT License](LICENSE). Course descriptions, datasets, reports, and generated results may remain subject to their educational or upstream terms.
+
+## Support this project
+
+If this repository is useful to you, consider [giving it a star](https://github.com/Wang-Ruibin/introduction-to-artificial-intelligence) ⭐. It helps more learners discover the project.
