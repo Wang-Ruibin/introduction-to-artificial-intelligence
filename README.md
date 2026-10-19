@@ -112,4 +112,10 @@ Source code is available under the [MIT License](LICENSE). Course descriptions, 
 
 ## Support this project
 
+<div align="center">
+
 If this repository is useful to you, consider [giving it a star](https://github.com/Wang-Ruibin/introduction-to-artificial-intelligence) ⭐. It helps more learners discover the project.
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Wang-Ruibin/introduction-to-artificial-intelligence&type=Date)](https://star-history.com/#Wang-Ruibin/introduction-to-artificial-intelligence&Date)
+
+</div>

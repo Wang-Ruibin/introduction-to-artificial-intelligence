@@ -112,4 +112,10 @@ C++ 实现不依赖任何第三方 C++ 库。
 
 ## 支持这个项目
 
+<div align="center">
+
 如果这个仓库对你有帮助，欢迎[点一个 Star](https://github.com/Wang-Ruibin/introduction-to-artificial-intelligence) ⭐，让更多学习者发现它。
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Wang-Ruibin/introduction-to-artificial-intelligence&type=Date)](https://star-history.com/#Wang-Ruibin/introduction-to-artificial-intelligence&Date)
+
+</div>
